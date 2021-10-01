@@ -1,0 +1,124 @@
+:root{
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529
+}
+.blog-left{
+    width: 50%;
+    height: 180px;
+    background-color: var(--bs-cyan);
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    border-radius: .25rem;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    display: block;
+    margin-bottom: 20px;
+    /* position: relative; */
+    color: white;
+}
+.blog-center{
+    width: 50%;;
+    background-color: var(--bs-light);
+    float: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: .25rem;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    display: block;
+    margin-bottom: 20px;
+    /* position: relative; */
+    /* color: white; */
+}
+.blog-right{
+    width: 50%;
+    background-color: rebeccapurple;
+    float: right;
+    margin: 10px;
+    padding: 10px;
+    border-radius: .25rem;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    display: block;
+    margin-bottom: 20px;
+    /* position: relative; */
+    color: white;
+}
+#blog1{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+    
+}
+#blog2{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+}
+#title-blog{
+    font-size: 50px;
+    font-weight: bold;
+    /* font-family:  'Roboto' ,'sans-serif' ; */
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+.inner{
+    padding: 10px;
+    width: 174.5px;
+    height: 100px;
+}
+.icon{
+    color: rgba(0,0,0,.15);
+    z-index: 0;
+    width: 174.5px;
+    height: 0;
+}
+.text-footer{
+    background-color: rgba(0,0,0,.1);
+    color: #fff;
+    display: block;
+    padding: 3px 0;
+    /* position: relative; */
+    text-align: center;
+    text-decoration: none;
+    z-index: 10;
+}
+@media screen and (max-width: 1024px){
+ 
+    .blog-left , .blog-center , .blog-right{
+        /* display: flex; */
+        flex-direction: column;
+        width: auto;
+       /*  */
+    }
+}
+@media (max-width: 650px)
+{
+    #blog1 , #blog2{
+        flex-direction: column;
+        width: auto;
+    }
+}
